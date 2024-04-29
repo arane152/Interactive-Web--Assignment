@@ -1,0 +1,474 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+
+aside {
+    display: flex;
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #4D5A85;
+    transform: translateX(-270px);
+    transition: all 0.2s ease-in-out;
+    z-index: 6;
+}
+
+.menu_link {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+
+aside a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #DBECFB;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside.open{
+    transform: translateX(0);
+}
+
+.close {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 170px;
+}
+
+.close img {
+    width: 48px;
+    height: 48px;
+}
+
+header {
+    display: grid;
+    height: 10vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header_left {
+    display: flex;
+    padding-left: 40px;
+}
+
+.menu_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 10vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_div img {
+    width: 40px;
+    height: 40px;
+}
+
+.header_center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    height: 68px;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 40px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vh;
+}
+
+.login a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #505050;
+}
+
+.login a:hover {
+    color: #171717;
+    transition: all 0.1s ease-in-out;
+}
+
+main {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.main_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+}
+
+.back img {
+    width: 48px;
+    height: 80px;
+}
+
+.main_center {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img0 {
+    background-image: url(./시흥\ 갯골\ 축제.jpg);     
+    background-size: cover;    
+}
+
+.img0_back {
+    background-image: url(./시흥\ 갯골\ 축제_뒤.jpg);
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url(./시흥\ 거북섬\ 해양축제.png);
+    background-size: cover;
+}
+
+.img1_back {
+    background-image: url(./시흥\ 거북섬\ 해양축제_뒤.jpg);
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(./시흥\ 물수제비\ 영화제.jpg);
+    background-size: cover;
+}
+
+.img2_back {
+    background-image: url(./시흥\ 물수제비\ 영화제_뒤.jpg);
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(./알로하\ 거북섬\ 페스티벌.jpg);
+    background-size: cover;
+}
+
+.img3_back {
+    background-image: url(./알로하\ 거북섬\ 페스티벌_뒤.jpg);
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    width: 25vw;
+    height: 33.5vw;
+    box-shadow: 8px 8px 8px 0 #1b1b1b56;
+}
+
+.image {
+    display: flex;
+    position: absolute;
+    width: 25vw;
+    height: 33.5vw;
+    transition: all 0.1s ease-in-out;
+}
+
+.content:nth-child(1) {
+    left: -50%;
+    z-index: 2;
+    transform: translateX(-100%) scale(0.0);
+}
+
+.content:nth-child(2) {
+    left: 0%;
+    z-index: 2;
+    transform: translateX(-15%) scale(0.7);
+}
+
+.content:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+}
+
+.content:nth-child(n+4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-85%) scale(0.7);
+}
+
+/* forward */
+
+@keyframes mv0to3 {
+    0% {
+        left: -50%;
+        transform: translateX(-100%) scale(0.0);
+    }
+
+    30% {
+        left: 100%;
+        transform: translateX(0%) scale(0.0);
+    }
+
+    100% {
+        left: 100%;
+        transform: translateX(-85%) scale(0.7);
+    }
+}
+
+@keyframes mv3to2 {
+    from {
+        left: 100%;
+        transform: translateX(-85%) scale(0.7);
+    }
+    to {
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes mv2to1 {
+    from {
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+    to {
+        left: 0%;
+        transform: translateX(-15%) scale(0.7);
+    }
+}
+
+@keyframes mv1to0 {
+    from {
+        left: 0%;
+        transform: translateX(-15%) scale(0.7);
+    }
+    
+    to {
+        left: -50%;
+        transform: translateX(-100%) scale(0.0);
+    }
+}
+
+
+.mv0to3 {
+    animation: mv0to3 0.5s forwards;
+}
+
+.mv3to2 {
+    animation: mv3to2 0.5s forwards;
+}
+
+.mv2to1 {
+    animation: mv2to1 0.5s forwards;
+}
+
+.mv1to0 {
+    animation: mv1to0 0.5s forwards;
+}
+
+
+/* back */
+@keyframes mv0to1 {
+    from {
+        left: -50%;
+        transform: translateX(-100%) scale(0.0);
+    }
+    to {
+        left: 0%;
+        transform: translateX(-15%) scale(0.7);
+    }
+}
+
+@keyframes mv1to2 {
+    from {
+        left: 0%;
+        transform: translateX(-15%) scale(0.7);
+    }
+    to {
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes mv2to3 {
+    from {
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+    to {
+        left: 100%;
+        transform: translateX(-85%) scale(0.7);
+    }
+}
+
+@keyframes mv3to0 {
+    0% {
+        left: 100%;
+        transform: translateX(-85%) scale(0.7);
+    }
+
+    50% {
+        left: 100%;
+        transform: translateX(0%) scale(0.0);
+    }
+
+    100% {
+        left: 0%;
+        transform: translateX(-100%) scale(0.0);
+    }
+}
+
+.mv0to1 {
+    animation: mv0to1 0.5s forwards;
+}
+
+.mv1to2 {
+    animation: mv1to2 0.5s forwards;
+}
+
+.mv2to3 {
+    animation: mv2to3 0.5s forwards;
+}
+
+.mv3to0 {
+    animation: mv3to0 0.5s forwards;
+}
+
+
+.main_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+}
+
+.forward img {
+    width: 48px;
+    height: 80px;
+}
+
+footer {
+    display: grid;
+    height: 10vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.empty {
+    display: flex;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 25px;
+}
+
+.current_page {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #8CBAFF;
+    border-radius: 12.5px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.title p {
+    font-size: 12px;
+    color: #505050;
+}
+
+.title p span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #353535;
+}
+
+.dark {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: #000000d2;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.dark_close {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 6vh;
+    left: 80vw;
+    width: 50px;
+    height: 50px;
+}
