@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if ((img) && (widthDetected > 767)) {img.style.transform = 'scale(1) translateX(-60%) translateY(0%)'}
         else {img.style.transform = 'scale(1) translateX(-10%) translateY(-60%)'};
         if ((imgBack) && (widthDetected > 767)) {imgBack.style.transform = 'scale(1) translateX(60%) translateY(0%)'}
-        else {imgBack.style.transform = 'scale(1) translateX(-10%) translateY(60%)'};
+        else {imgBack.style.transform = 'scale(1) translateX(-10%) translateY(45%)'};
         dark.style.display = 'flex';
         setTimeout(function() {
             dark.style.opacity = '1';
