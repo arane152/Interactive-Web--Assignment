@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const menu = document.querySelector("div.menu_div")
     const menuClose = document.querySelector("div.close")
 
+    let widthDetected = window.innerWidth;
+
     contents.forEach(content => {
         content.addEventListener("mouseover", mouseOverEvent);
         content.addEventListener("mouseout", mouseOutEvent);
@@ -135,8 +137,10 @@ document.addEventListener('DOMContentLoaded', function(){
         let img = this.querySelector(`.img${currentPage}`);
         let imgBack = this.querySelector(`.img${currentPage}_back`)
         if (!img && !imgBack) return;
-        if (img) img.style.transform = 'scale(1) translateX(-60%) translateY(0%)';
-        if (imgBack) imgBack.style.transform = 'scale(1) translateX(60%) translateY(0%)';
+        if ((img) && (widthDetected > 767)) {img.style.transform = 'scale(1) translateX(-60%) translateY(0%)'}
+        else {img.style.transform = 'scale(1) translateX(-10%) translateY(-60%)'};
+        if ((imgBack) && (widthDetected > 767)) {imgBack.style.transform = 'scale(1) translateX(60%) translateY(0%)'}
+        else {imgBack.style.transform = 'scale(1) translateX(-10%) translateY(60%)'};
         dark.style.display = 'flex';
         setTimeout(function() {
             dark.style.opacity = '1';
