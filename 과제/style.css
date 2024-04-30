@@ -472,3 +472,114 @@ footer {
     width: 50px;
     height: 50px;
 }
+
+@media all and (min-width:0px) and (max-width:767px) {
+    .title {
+        padding-right: 20px;
+    }
+
+    .title p {
+        font-size: 8px;
+    }
+    .title p span {
+        font-size: 12px;
+    }
+
+    .header_right {
+        padding-right: 20px;
+    }
+
+    .login {
+        width: 22vw;
+        height: 10vh;
+    }
+    .logo img {
+        width: calc(160px / 2);
+        height: calc(68px / 2);
+    }
+    .login a {
+        font-size: 12px;
+    }
+
+    .menu_div {
+        width: 10vw;
+        height: 10vh;
+    }
+    
+    .menu_div img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header_left {
+        padding-left: 20px;
+    }
+
+    aside {
+        width: 150px;
+        height: 100vh;
+        flex-direction: column;
+        transform: translateX(-150px);
+    }
+    
+    .menu_link {
+        margin-left: 40px;
+        margin-top: 80px;
+    }
+    
+    aside a {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    aside.open{
+        transform: translateX(0);
+    }
+
+    .close {
+        width: 100px;
+        height: 100px;
+        margin-left: 70px;
+    }
+    
+    .close img {
+        width: 32px;
+        height: 32px;
+    }
+
+    main {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+
+    .back {
+        width: 60px;
+        height: 120px;
+    }
+
+    .back img {
+        width: 36px;
+        height: 60px;
+    }
+
+    .forward {
+        width: 60px;
+        height: 120px;
+    }
+    
+    .forward img {
+        width: 36px;
+        height: 60px;
+    }
+
+    .content {
+        width: calc(500px / 2);
+        height: calc(670px / 2);
+    }
+
+    .image {
+        width: calc(500px / 2);
+        height: calc(670px / 2);
+    }
+}
