@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="historydisplay"></div>
+        <div class="display">
+            <input type="number" id="calcDisplay" value="0">
+        </div>
+        <div class="buttons">
+            <button id="clear" class="calcButton">C</button>
+            <button id="none" class="calcButton"></button>
+            <button id="divide" class="calcButton">÷</button>
+            <button id="multiply" class="calcButton">×</button>
+            <button id="minus" class="calcButton">-</button>
+            <button id="plus" class="calcButton">+</button>
+            <button id="calculate" class="calcButton">=</button>
+
+            <button id="one" class="numPad">1</button>
+            <button id="two" class="numPad">2</button>
+            <button id="three" class="numPad">3</button>
+            <button id="four" class="numPad">4</button>
+            <button id="five" class="numPad">5</button>
+            <button id="six" class="numPad">6</button>
+            <button id="seven" class="numPad">7</button>
+            <button id="eight" class="numPad">8</button>
+            <button id="nine" class="numPad">9</button>
+            <button id="zero" class="numPad">0</button>
+            <button id="period" class="numPad">.</button>
+        </div>
+    </div>
+    
+    <div class="changeRemote">
+        <div class="themeChange">
+            <h1>Change Theme</h1>
+            <div class="displayModeDiv">
+                <div id="darkMode"></div>
+                <div id="whiteMode"></div>
+            </div>
+            
+        </div>
+
+        <div class="buttonChange">
+            <h1>Button Color Change <span>(Orange)</span></h1>
+            <input id="buttonChangeInput" type="range" max="5" value="0">
+        </div>
+
+        <div class="fontChange">
+            <h1>Font Change</h1>
+            <select name="font">
+                <option id="Pretendard" value="Pretendard Variable">Pretendard</option>
+                <option id="Roboto" value="Roboto">Roboto</option>
+            </select>
+        </div>
+
+        <div class="fontWeightChange">
+            <h1>Font Weight Change</h1>
+            <input id="fontWeightChangeInput" type="range" max="4" value="4">
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
