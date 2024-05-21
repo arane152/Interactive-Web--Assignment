@@ -116,7 +116,7 @@ header .navi p:hover {
     font-size: 4vw;
     margin-bottom: 0.5vw;
     transform: translateY(5vw);
-    opacity: 5%;
+    opacity: 0%;
     transition: all 1.0s ease-in-out;
     color: #ffffff;
 }
